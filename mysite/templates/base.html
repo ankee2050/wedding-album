@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+<head>
+	<title>Mukesh-Trishali</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'site/css/grid.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'site/css/reset.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'site/css/style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400italic' rel='stylesheet' type='text/css'>  
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+</head>
+<script type="text/javascript" src="{% static 'site/js/html5.js' %}"></script>
+<script type="text/javascript" src="{% static 'site/js/jquery-1.7.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'site/js/jquery.easing.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'site/js/jquery.galleriffic.js' %}"></script>
+<script type="text/javascript" src="{% static 'site/js/jquery.opacityrollover.js' %}"></script>
+<script type="text/javascript" src="{% static 'site/js/tms-0.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'site/js/tms_presets.js' %}"></script>
+
+
+{% include 'header.html' %}
+	{% block content %}
+	{% endblock content %}	
+{% include 'footer.html' %}
+<script type="text/javascript">
+		$(window).load(function() {
+			$('.slider')._TMS({
+				duration:1000,
+				easing:'easeOutQuint',
+				preset:'slideDown',
+				slideshow:7000,
+				banners:false,
+				pauseOnHover:true,
+				pagination:true,
+				pagNums:false
+			});
+		});
+    </script>
+</html>

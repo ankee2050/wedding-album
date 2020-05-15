@@ -1,0 +1,46 @@
+{% load static %}
+   <header>
+    	<div class="main">
+        	<h1>
+            	<a href="{% url 'index' %}" class="wedding_logo">MukeshTrishali</a>
+                <em>Wedding Memories</em>
+            </h1>
+        </div>
+        <div class="menu-row">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="wrapper">
+                    	<div class="grid_12">
+                        	<nav>
+                                <ul class="menu">
+                                    <li><a class="active" href="{% url 'index' %}">About</a></li>
+                                    <li><a href="{% url 'wedding' %}">Wedding</a></li>
+                                    <li><a href="{% url 'album' %}">Album</a></li>
+                                    <li><a href="{% url 'links' %}">Links</a></li>
+                                    <li><a href="{% url 'contacts' %}">contacts</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+        	<div class="slider-wrapper">
+                <div class="slider">
+                    <ul class="items">
+                        <li>
+                            <img src="{% static 'site/images/slider-img1.jpg' %}" alt="" />
+                        </li>
+                        <li>
+                            <img src="{% static 'site/images/slider-img2.jpg' %}" alt="" />
+                        </li>
+                        <li>
+                            <img src="{% static 'site/images/slider-img3.jpg' %}" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
