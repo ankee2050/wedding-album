@@ -12,13 +12,14 @@
                 	<div class="wrapper">
                     	<div class="grid_12">
                         	<nav>
-                                <ul class="menu">
+                                {{ menu | safe }}
+                                <!-- <ul class="menu">
                                     <li><a class="active" href="{% url 'index' %}">About</a></li>
                                     <li><a href="{% url 'wedding' %}">Wedding</a></li>
                                     <li><a href="{% url 'album' %}">Album</a></li>
                                     <li><a href="{% url 'links' %}">Links</a></li>
-                                    <li><a href="{% url 'contacts' %}">contacts</a></li>
-                                </ul>
+                                    <li><a href="{% url 'contacts' %}">Contacts</a></li>
+                                </ul> -->
                             </nav>
                         </div>
                     </div>
