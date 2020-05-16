@@ -170,14 +170,14 @@
                 text-transform: uppercase;
             }
             .container {
-                /*width: 90%;*/
+                width: 90%;
                 height: 420px;
                 padding: 10px;
                 margin: 0 auto;
                 position: relative;
             }
             .balloon {
-                /*width: 80%;*/
+                width: 80%;
                 margin: 0 auto;
                 padding-top: 30px;
                 position: relative;
@@ -500,3 +500,20 @@
                 color: white;
                 font-size: 3.5em;
             }
+
+
+
+
+canvas{display:block}
+h2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
