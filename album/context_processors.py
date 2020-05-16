@@ -19,15 +19,15 @@ def init_menu(request):
 	else:
 		menu += "<li><a href='/wedding'>Wedding</a></li>"
 	
-	if request.get_full_path() == '/links':
-		menu += "<li><a class='active' href='/links'>Links</a></li>"
+	if request.get_full_path() == '/family':
+		menu += "<li><a class='active' href='/links'>Family</a></li>"
 	else:
-		menu += "<li><a href='/links'>Links</a></li>"
+		menu += "<li><a href='/family'>Family</a></li>"
 	
-	if request.get_full_path() == '/tribute':
-		menu += "<li><a class='active' href='/tribute'>Tribute</a></li>"
+	if request.get_full_path() == '/wishes':
+		menu += "<li><a class='active' href='/wishes'>Wishes</a></li>"
 	else:
-		menu += "<li><a href='/tribute'>Tribute</a></li>"
+		menu += "<li><a href='/wishes'>Wishes</a></li>"
 
 	menu += '</ul>'
 	context['menu'] = menu

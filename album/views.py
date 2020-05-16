@@ -10,11 +10,11 @@ def wedding(request):
 def album(request):
 	return render(request, 'album/album.html', {})
 
-def links(request):
-	return render(request, 'album/links.html', {})
+def family(request):
+	return render(request, 'album/family.html', {})
 
 def contacts(request):
 	return render(request, 'album/contacts.html', {})
 
-def tribute(request):
+def wishes(request):
 	return render(request, 'album/monogram.html', {})
