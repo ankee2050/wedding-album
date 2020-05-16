@@ -7,4 +7,5 @@ urlpatterns = [
 	path('album', album, name='album'),
 	path('links', links, name='links'),
 	path('contacts', contacts, name='contacts'),
+	path('tribute', tribute, name='tribute'),
 ]

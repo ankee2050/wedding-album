@@ -24,10 +24,10 @@ def init_menu(request):
 	else:
 		menu += "<li><a href='/links'>Links</a></li>"
 	
-	if request.get_full_path() == '/contacts':
-		menu += "<li><a class='active' href='/contacts'>Contacts</a></li>"
+	if request.get_full_path() == '/tribute':
+		menu += "<li><a class='active' href='/tribute'>Tribute</a></li>"
 	else:
-		menu += "<li><a href='/contacts'>Contacts</a></li>"
+		menu += "<li><a href='/tribute'>Tribute</a></li>"
 
 	menu += '</ul>'
 	context['menu'] = menu

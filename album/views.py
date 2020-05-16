@@ -15,3 +15,6 @@ def links(request):
 
 def contacts(request):
 	return render(request, 'album/contacts.html', {})
+
+def tribute(request):
+	return render(request, 'album/tribute.html', {})
