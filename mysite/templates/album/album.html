@@ -26,8 +26,9 @@
                                     <p class="indent-bot"><em class="color-2">{{album.description}}</em></p>
                                     <a class="link-1" href="/photo/{{album.pk}}/post_comment/">Add Your Comment</a>
                                 </div>
+                                <div style="overflow-y:scroll; height: 500px !important;">
                                 {% for comment in album|get_related_comments %}
-                                <div class="wrapper p2">
+                                <div class="wrapper p2" >
                                     <figure class="img-indent img-border1">
                                         <a href="javascript:void">
                                                     {% if comment.profile_picture == '' %}
@@ -45,7 +46,7 @@
                                     </div>
                                 </div>
                                 {% endfor %}
-
+                            </div>
                                 <!-- <div class="wrapper p2">
                                     <figure class="img-indent img-border1"><a href="#"><img src="{% static 'site/images/page3-img2.jpg' %}" alt=""></a></figure>
                                     <div class="extra-wrap">
