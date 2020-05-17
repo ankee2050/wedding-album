@@ -615,7 +615,7 @@ footer {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 222px;
+  width: 222px !important;
   /*margin: auto;*/
   text-align: center;
   font-family: arial;
