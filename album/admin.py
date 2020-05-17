@@ -1,3 +1,5 @@
 from django.contrib import admin
+from album.models import Photos, Comments
 
-# Register your models here.
+admin.site.register(Photos)
+admin.site.register(Comments)

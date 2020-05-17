@@ -8,4 +8,5 @@ urlpatterns = [
 	path('family', family, name='family'),
 	path('contacts', contacts, name='contacts'),
 	path('wishes', wishes, name='wishes'),
+	path('photo/<int:pk>/post_comment/', add_comment_to_photo, name='post-comment'),
 ]
