@@ -257,6 +257,7 @@ h6 {color:#f00058;}
 .q1 .quote-bot {
 	padding-bottom:5px;
 	padding-left:10px;
+	margin-right: 2px;
 	background:url(../images/quote-bot.jpg) right bottom no-repeat;
 	position:relative;
 	z-index:1;
@@ -610,3 +611,30 @@ footer {
 	padding-right:43px;
 }
 	.footer-text span {display:block;}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 222px;
+  /*margin: auto;*/
+  text-align: center;
+  font-family: arial;
+
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.profiling{
+	border: none !important;
+	padding: 3px;
+	/*padding-right: 20px;*/
+	/*padding-left: 20px; */
+}
+
+.profile-name{
+	/*padding-right:15px;*/
+	/*padding-left:15px;*/
+}
