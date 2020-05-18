@@ -32,9 +32,9 @@
                                     <figure class="img-indent img-border1">
                                         <a href="javascript:void">
                                                     {% if comment.profile_picture == '' %}
-                                        <img src="{% static 'site/images/default_profile.png' %}" alt="" style="width:72px; height: auto;">
+                                        <img src="{% static 'site/images/default_profile.png' %}" alt="" style="width:80px; height: 80px; object-fit: contain;">
                                                     {% else %}
-                                        <img src="{{comment.profile_picture.url}}" alt="" style="width:auto; height: 72px;">
+                                        <img src="{{comment.profile_picture.url}}" alt="" style="width:auto; height: 80px;">
                                                     {% endif %}
                                     </a></figure>
                                     <div class="extra-wrap">
