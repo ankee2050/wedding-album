@@ -24,7 +24,7 @@
                                 <!-- <h3>01. Photo Name</h3> -->
                                 <div class="border-bot p3">
                                     <p class="indent-bot"><em class="color-2">{{album.description}}</em></p>
-                                    <a class="link-1" href="/photo/{{album.pk}}/post_comment/">Add Your Comment</a>
+                                    <a class="link-1" href="/photo/{{album.pk}}/post_comment/"><font style="font-size: 18px;">Add Your Comment</font></a>
                                 </div>
                                 <div style="overflow-y:scroll; height: 500px !important;">
                                 {% for comment in album|get_related_comments %}
@@ -38,11 +38,11 @@
                                                     {% endif %}
                                     </a></figure>
                                     <div class="extra-wrap">
-                                        <h6>{{comment.name}}</h6>
+                                        <h6><font style="font-size: 18px;">{{comment.name}}</font></h6>
 
                                         <!-- <time class="tdate-1" datetime="2011-10-21"><a class="link" href="#">21.10.2011</a></time> -->
 
-                                        {{comment.comment}}
+                                        <font style="font-size: 18px;">{{comment.comment}}</font>
                                     </div>
                                 </div>
                                 {% endfor %}
