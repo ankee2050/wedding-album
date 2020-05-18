@@ -18,6 +18,17 @@
 	}
 </style>
 <a href = "/"><img src="{% static 'site/images/logo.png' %}" style="width: 100%;"></a>
+<br>
+<br>
+
+
+	<div class="indent-left">
+		<div class="wrapper">
+	<span style="padding-left: 32%; ">
+	<a href="{% url 'add-wish' %}"><font style="font-size: 30px;">Click me add Your wishes ...</font></a>
+	</span>
+		</div>
+	</div>
 
 <article class="grid_8">
                     	<div class="indent-left">
@@ -33,7 +44,14 @@
                                 <blockquote class="q2">
                                 <div class="padding">
 	                                <font color="#f5c71a" style="font-family: Annie Use Your Telescope;font-size: 17px;">
+	                                	{% for wish in wishes %}
 	                                	<p>
+		                                	{{wish.wish}}
+		                                	&nbsp;&nbsp;-<i><b>{{wish.name}}</b></i>
+										</p>
+										{% endfor %}
+
+	                                	<!-- <p>
 		                                	May you enjoy a happy married life, not just for years but for eternity. Stay together forever. Congratulations to both my children for the wonderful year of falling in love with each other. Happy Anniversary!
 		                                	&nbsp;&nbsp;-<i><b>Mummy Ji</b></i>
 										</p>
@@ -46,7 +64,7 @@
 										</p>
 										<p>
 											The way you maintain your love, I like your style. Your Pair looks so cute. It is the reason behind my smile. Happy Anniversary Bhaiya & Bhabhi! &nbsp;&nbsp;-<i><b>Deepesh</b></i>
-										</p>
+										</p> -->
 	                                 </font>
                               </div>
                           	  </blockquote>

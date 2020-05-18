@@ -2,8 +2,6 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <body id = "page4">    
     <section id="content">
         <div class="main">
@@ -85,13 +83,21 @@
                     <article class="grid_4">
                     	<div class="indent-left">
                         	<h2 class="prev-indent-bot">Testimonials</h2>
+                            <div class="">
+                                <a href="{% url 'add-testimonial' %}">Click here to add something...</a>
+                            </div>
+                            <div class="clearfix">&nbsp;</div>
+                            <div style="overflow-y:scroll; height: 480px !important;">
+                            {% for testimonial in testimonials %}
                             <blockquote class="q3 p2">
                             	<div class="padding">
-                                	Quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo emo enim ipsam voluptatem quia voluptas.
-                                    <strong class="text-2">Jason Segel</strong>
+                                	{{testimonial.testimonial}}
+                                    <strong class="text-2">-{{testimonial.name}}</strong>
                                 </div>
                             </blockquote>
-                            <blockquote class="q3 p2">
+                            {% endfor %}
+                        </div>
+                            <!-- <blockquote class="q3 p2">
                             	<div class="padding">
                                 	Aut odit aut fugit, sed quia consene voluptatem nesciunt. At vero eos et accusamus.
                                     <strong class="text-2">Mike Pileggi</strong>
@@ -108,7 +114,7 @@
                                 	Occaecati cupiditate non provident, deserunt mollitia animi, id est laborum et dolorum fuga
                                     <strong class="text-2">Alex Smith</strong>
                                 </div>
-                            </blockquote>
+                            </blockquote> -->
 
                         </div>
                     </article>

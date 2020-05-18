@@ -34,7 +34,7 @@
                                                     {% if comment.profile_picture == '' %}
                                         <img src="{% static 'site/images/default_profile.png' %}" alt="" style="width:72px; height: auto;">
                                                     {% else %}
-                                        <img src="{{comment.profile_picture.url}}" alt="" style="width:72px; height: auto;">
+                                        <img src="{{comment.profile_picture.url}}" alt="" style="width:auto; height: 72px;">
                                                     {% endif %}
                                     </a></figure>
                                     <div class="extra-wrap">

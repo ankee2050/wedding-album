@@ -16,3 +16,17 @@ class Comments(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class Wish(models.Model):
+	name = models.CharField(max_length=100)
+	wish = models.TextField()
+
+	def __str__(self):
+		return self.wish
+
+class Testimonial(models.Model):
+	name = models.CharField(max_length=100)
+	testimonial = models.TextField()
+
+	def __str__(self):
+		return self.testimonial

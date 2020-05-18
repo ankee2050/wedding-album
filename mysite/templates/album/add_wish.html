@@ -1,0 +1,19 @@
+{% extends 'base3.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+<h1 align="center">Post your Message</h1>
+<div style="padding: 5px;">
+<a href = "{% url 'wishes' %}"><img src="{% static 'site/images/back.png' %}" style="width: 32px;"></a>
+</div>
+<form method="POST">
+	{% csrf_token %}
+	<table class="table table-bordered table-striped">
+	{{ form.as_table }}
+</table>
+<div style="padding-bottom: 10px;" align="center">
+	<button type="submit" class="btn btn-success">Wish</button>
+</div>
+</form>
+</div>
+{% endblock %}

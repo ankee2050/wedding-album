@@ -9,4 +9,6 @@ urlpatterns = [
 	path('contacts', contacts, name='contacts'),
 	path('wishes', wishes, name='wishes'),
 	path('photo/<int:pk>/post_comment/', add_comment_to_photo, name='post-comment'),
+	path('add_wish', add_wish, name='add-wish'),
+	path('add_testimonial', add_testimonial, name='add-testimonial'),
 ]
