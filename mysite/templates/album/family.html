@@ -11,6 +11,18 @@
                     	<div class="indent-right">
                         	<h2 class="indent-bot2" style="padding-left: 60px;">Family</h2>
                             <div class="indent-bot" style="padding-left: 60px;">
+                            <blockquote class="q3" style="font-size: 20px;">
+                            <p style="line-height: 20px;" class="padding">
+                                where Life begins and Love never ends.
+                                The bond that links a family is not one of blood, but of Respect and Joy in each other's Life.
+                            </p>
+                            <p style="line-height: 20px;" class="padding">
+                                "A family is one of nature's solubles, It dissolves in Time like Salt in Rainwater"
+                                Family means no one gets left behind and forgotten.
+                            </p>
+                            </blockquote>
+                            </div>
+                            <div class="indent-bot" style="padding-left: 60px;">
                             <figure class="img-indent3 img-border1 profiling">
                                 <div class="card">
                                 <img src="{% static 'site/images/page1-img1.jpg' %}" alt="Mukesh Prajapati" >
@@ -49,37 +61,8 @@
                         <div class="clearfix"></div>
                         <br/>
 
-                     <!--    <div class="indent-bot" style="padding-left: 60px;">
-                            <figure class="img-indent3 img-border1 profiling">
-                                <div class="card">
-                                <img src="{% static 'site/images/ankit.png' %}" alt="Ankit Prajapati" >
-                                <h3 class="profile-name">Ankit Prajapati</h3>
-                                <h5 class="title">(Brother)</h5>
-                                </div>
-                            </figure>
-                        </div> -->
-
                         </div>
                     </article>
-                    <!-- <article class="grid_4">
-                    	<div class="indent">
-                        	<h2 class="indent-bot2">Other Links</h2>
-                            <div class="indent-bot">
-                                <figure class="img-border1"><img src="{% static 'site/images/page4-img2.jpg' %}" alt=""></figure>
-                                <div class="clear"></div>
-                            </div>
-
-                            <ul class="list-1 p2">
-                            	<li><a href="#">Ut enim ad minima veniam</a></li>
-                                <li><a href="#">Quis nostrum exercitationem ullam</a></li>
-                                <li><a href="#">Corporis suscipit laboriosamsi ut aliquid</a></li>
-                                <li><a href="#">Quis autem vel eum iure</a></li>
-                                <li><a href="#">Reprehenderit qui in ea voluptate</a></li>
-                            </ul>
-                            <p class="img-indent-bot">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-
-                        </div>
-                    </article> -->
                     <article class="grid_4">
                     	<div class="indent-left">
                         	<h2 class="prev-indent-bot">Testimonials</h2>
@@ -91,8 +74,8 @@
                             {% for testimonial in testimonials %}
                             <blockquote class="q3 p2">
                             	<div class="padding">
-                                	<font style="font-size: 18px;">{{testimonial.testimonial}}</font>
-                                    <strong class="text-2">-{{testimonial.name}}</strong>
+                                	<font style="font-size: 24px;">{{testimonial.testimonial}}</font>
+                                    <strong class="text-2" style="font-size: 18px;">-{{testimonial.name}}</strong>
                                 </div>
                             </blockquote>
                             {% endfor %}
