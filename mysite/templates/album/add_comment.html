@@ -6,7 +6,12 @@
 <div style="padding: 5px;">
 <a href = "{% url 'album' %}"><img src="{% static 'site/images/back.png' %}" style="width: 32px;"></a>
 </div>
-<form method="POST" action="." enctype="multipart/form-data">
+
+<div id="pageloader">
+   <img src="{% static 'site/images/loading_photo.gif' %}" alt="processing..." />
+</div>
+
+<form method="POST" action="." enctype="multipart/form-data" id="submit_comment">
 	{% csrf_token %}
 	<table class="table table-bordered table-striped">
 	{{ form.as_table }}
@@ -16,4 +21,15 @@
 </div>
 </form>
 </div>
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+	$("#submit_comment").on("submit", function(){
+		$("#pageloader").fadeIn();
+	});
+});
+
+</script>
+
 {% endblock %}

@@ -638,3 +638,24 @@ footer {
 	/*padding-right:15px;*/
 	/*padding-left:15px;*/
 }
+
+#pageloader
+{
+  background: rgba( 255, 255, 255, 0.9 );
+  display: none;
+  height: 30%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+#pageloader img
+{
+  left: 32%;
+  /*margin-left: -32px;*/
+  /*margin-top: -32px;*/
+  position: absolute;
+  top: 33%;
+  width: 120px;
+  height: auto;
+}
