@@ -26,6 +26,8 @@
 	
 $(document).ready(function(){
 	$("#submit_comment").on("submit", function(){
+		$("#pageloader").show();
+		$("#pageloader").css('display','block');
 		$("#pageloader").fadeIn();
 	});
 });
