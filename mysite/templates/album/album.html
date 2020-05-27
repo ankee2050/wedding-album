@@ -26,7 +26,7 @@
                                     <p class=""><font style="font-size: 20px;"><strong>{{album.description}}</strong></font></p>
                                     <a class="link-1" href="/photo/{{album.pk}}/post_comment/"><font style="font-size: 18px;">Add Your Comment</font></a>
                                 </div>
-                                <div style="overflow-y:scroll; height: 510px !important;">
+                                <div style="overflow-y:scroll; height: 480px !important;">
                                 {% for comment in album|get_related_comments %}
                                 <div class="wrapper p2" >
                                     <figure class="img-indent img-border1">
